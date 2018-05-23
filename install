@@ -11,6 +11,13 @@ case "$1" in
 		vim +PluginInstall +qall
 		;;
 
+	"zsh")
+		DEST=$HOME/.zshrc
+		rm $DEST
+		ln -s $(pwd)/zsh/.zshrc $DEST
+		;;
+
+
 	"sublime")
 		DEST=$HOME/.config/sublime-text-3/Packages/User
 		rm -rf $DEST
