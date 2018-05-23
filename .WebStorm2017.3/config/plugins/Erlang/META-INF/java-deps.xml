@@ -1,0 +1,49 @@
+<!--
+  ~ Copyright 2012-2013 Sergey Ignatov
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<idea-plugin version="2">
+  <extensions defaultExtensionNs="com.intellij">
+    <moduleType id="ERLANG_MODULE" implementationClass="org.intellij.erlang.module.ErlangModuleType"/>
+    <compileServer.plugin classpath="jps-plugin.jar"/>
+    <facetType implementation="org.intellij.erlang.facet.ErlangFacetType"/>
+    <framework.detector implementation="org.intellij.erlang.facet.ErlangFacetBasedFrameworkDetector"/>
+    <projectService serviceImplementation="org.intellij.erlang.configuration.ErlangCompilerSettings" />
+    <projectConfigurable instance="org.intellij.erlang.configuration.ErlangCompilerOptionsConfigurable" parentId="project.propCompiler" id="Erlang compiler"
+                         displayName="Erlang Compiler" />
+
+    <localInspection language="Erlang" shortName="ErlangIncludeDirectories" displayName="Include directories configuration issues"
+                     groupName="Erlang" enabledByDefault="true" level="WARNING"
+                     implementationClass="org.intellij.erlang.inspection.ErlangIncludeDirectoriesInspection"/>
+
+    <projectStructureDetector implementation="org.intellij.erlang.editor.ErlangProjectStructureDetector"/>
+    <projectImportProvider implementation="org.intellij.erlang.rebar.importWizard.RebarProjectImportProvider"/>
+    <projectImportBuilder implementation="org.intellij.erlang.rebar.importWizard.RebarProjectImportBuilder"/>
+    <projectOpenProcessor implementation="org.intellij.erlang.rebar.importWizard.RebarProjectOpenProcessor"/>
+    <projectStructure.sourceRootEditHandler implementation="org.intellij.erlang.roots.ErlangIncludeSourceRootEditHandler"/>
+    <compiler.buildTargetScopeProvider implementation="org.intellij.erlang.compilation.ErlangTargetScopeProvider"/>
+  </extensions>
+  <project-components>
+    <component>
+      <implementation-class>org.intellij.erlang.compilation.ErlangDependenciesManager</implementation-class>
+    </component>
+  </project-components>
+  <actions>
+    <action id="Erlang.MarkAsIncludeDirectory"
+            class="org.intellij.erlang.roots.ErlangMarkIncludeSourceRootAction">
+      <add-to-group group-id="MarkRootGroup"/>
+    </action>
+  </actions>
+</idea-plugin>

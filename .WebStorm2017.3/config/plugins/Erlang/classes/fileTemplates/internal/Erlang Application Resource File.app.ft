@@ -1,0 +1,12 @@
+#parse("Erlang File Header.erl")
+{application, ${NAME_ATOM}, [
+    {description, ""},
+    {vsn, "1"},
+    {registered, []},
+    {applications, [
+        kernel,
+        stdlib
+    ]},
+    {mod, { ${NAME_ATOM}, []}},
+    {env, []}
+]}.

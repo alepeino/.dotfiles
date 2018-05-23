@@ -1,0 +1,46 @@
+<application>
+  <component name="VimSettings">
+    <state version="4" enabled="false" />
+    <globalmarks />
+    <filemarks>
+      <file name="$USER_HOME$/Code/rest-api/node_modules/http-status/lib/index.js" timestamp="1518791547291">
+        <mark key="[" line="93" column="0" />
+        <mark key="]" line="93" column="2" />
+        <mark key="^" line="93" column="2" />
+        <mark key="." line="93" column="2" />
+      </file>
+      <file name="$USER_HOME$/Code/content-upload/docker-compose.yml" timestamp="1519152401561">
+        <mark key="[" line="11" column="4" />
+        <mark key="]" line="11" column="4" />
+        <mark key="." line="11" column="4" />
+      </file>
+    </filemarks>
+    <jumps />
+    <registers>
+      <register name="1" type="2">
+        <text encoding="base64">ICAgIHBvcnRzOgo=</text>
+      </register>
+      <register name="&quot;" type="4">
+        <text>volumes</text>
+      </register>
+      <register name="-" type="4">
+        <text>volumes</text>
+      </register>
+    </registers>
+    <search>
+      <last-dir>0</last-dir>
+      <show-last>false</show-last>
+    </search>
+    <history>
+      <history-search />
+      <history-cmd />
+      <history-expr />
+      <history-input />
+    </history>
+    <shortcut-conflicts>
+      <shortcut-conflict owner="vim">
+        <text>ctrl pressed F</text>
+      </shortcut-conflict>
+    </shortcut-conflicts>
+  </component>
+</application>

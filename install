@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+
+cd `dirname $0`
+
+case "$1" in
+
+	"vim")
+		mkdir -p ./.vim/bundle
+		git clone https://github.com/VundleVim/Vundle.vim.git ./.vim/bundle/Vundle.vim
+		ln -s $(pwd)/.vim $HOME/.vim
+		vim +PluginInstall +qall
+		;;
+
+	"sublime")
+		DEST=$HOME/.config/sublime-text-3/Packages/User
+		rm -rf $DEST
+		ln -s $(pwd)/sublime $DEST
+		;;
+
+	"gitignore")
+		DEST=$HOME/.gitignore-global
+		rm -rf $DEST
+		ln -s $(pwd)/.gitignore-global $DEST
+		;;
+
+	"webstorm")
+		WS=".WebStorm2017.3"
+		DEST=$HOME/$WS
+		rm -rf $DEST
+		ln -s $(pwd)/$WS $DEST
+		;;
+	*)
+		echo $1
+		;;
+esac
