@@ -21,7 +21,7 @@ case "$1" in
 	"sublime")
 		DEST=$HOME/.config/sublime-text-3/Packages/User
 		rm -rf $DEST
-		ln -s $(pwd)/sublime $DEST
+		ln -s $(pwd)/subl $DEST
 		;;
 
 	"gitignore")

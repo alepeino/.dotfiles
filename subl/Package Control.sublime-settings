@@ -1,0 +1,41 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"A File Icon",
+		"AdvancedNewFile",
+		"All Autocomplete",
+		"auto-save",
+		"Babel",
+		"Babel Snippets",
+		"ClojureDocSearch",
+		"Color Highlighter",
+		"Emmet",
+		"Emoji",
+		"Enhanced Clojure",
+		"Highlight Trailing Whitespace",
+		"Jest",
+		"MarkdownLivePreview",
+		"Material Theme",
+		"Origami",
+		"Package Control",
+		"Parinfer",
+		"PHP Companion",
+		"PHPIntel",
+		"PHPSnippets",
+		"phpunitkit",
+		"Python 3",
+		"Sass",
+		"SideBarEnhancements",
+		"sublime-text-2-buildview",
+		"SublimeCodeIntel",
+		"SublimeREPL",
+		"SVGO",
+		"TerminalView",
+		"tern_for_sublime",
+		"Vue Syntax Highlight"
+	]
+}

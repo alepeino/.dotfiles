@@ -1,0 +1,9 @@
+{
+	"extensions":
+	[
+		"cljc",
+		"cljs",
+		"edn"
+	],
+	"tab_size": 2
+}
