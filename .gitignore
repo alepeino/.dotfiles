@@ -1,2 +1,7 @@
-/.WebStorm2017.3/system
-/.vim/bundle
+.vim/bundle
+.WebStorm2017.3/system/caches
+.WebStorm2017.3/system/index
+.WebStorm2017.3/system/log
+.WebStorm2017.3/system/vcs-log
+.WebStorm2017.3/system/LocalHistory
+.WebStorm2017.3/config/tasks/*

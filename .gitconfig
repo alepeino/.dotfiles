@@ -1,0 +1,8 @@
+[user]
+	name = Alejandro Peinó
+	email = alepeino@gmail.com
+[core]
+	excludesfile = ~/.gitignore-global
+	editor = vim
+[push]
+	default = simple

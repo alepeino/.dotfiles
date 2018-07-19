@@ -1,2 +1,0 @@
--export_type([foo/0]).
-type(foo() :: atom()).

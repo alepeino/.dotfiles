@@ -1,6 +1,0 @@
-#parse("Erlang File Header.erl")
--module(${NAME_ATOM}).
-#parse("Erlang File Module.erl")
-
-%% API
--export([]).

@@ -24,18 +24,18 @@ case "$1" in
 		ln -s $(pwd)/subl $DEST
 		;;
 
+	"gitconfig")
+		DEST=$HOME/.gitconfig
+		rm -rf $DEST
+		ln -s $(pwd)/.gitconfig $DEST
+		;;
+
 	"gitignore")
 		DEST=$HOME/.gitignore-global
 		rm -rf $DEST
 		ln -s $(pwd)/.gitignore-global $DEST
 		;;
 
-	"webstorm")
-		WS=".WebStorm2017.3"
-		DEST=$HOME/$WS
-		rm -rf $DEST
-		ln -s $(pwd)/$WS $DEST
-		;;
 	*)
 		echo $1
 		;;
