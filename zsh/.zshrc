@@ -99,6 +99,8 @@ alias art='php artisan'
 alias dk='docker'
 alias dkc='docker-compose'
 alias dkexec='dk exec -it `dk ps -q | head -n1`'
+alias python=python3
+alias pip=pip3
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
