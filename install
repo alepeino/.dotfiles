@@ -19,8 +19,10 @@ case "$1" in
 
 
 	"sublime")
-		DEST=$HOME/.config/sublime-text-3/Packages/User
+		DEST_DIR=$HOME/.config/sublime-text-3/Packages
+		DEST=$DEST_DIR/User
 		rm -rf $DEST
+		mkdir -p $DEST_DIR
 		ln -s $(pwd)/subl $DEST
 		;;
 
