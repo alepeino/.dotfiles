@@ -96,6 +96,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias art='php artisan'
+alias nr='npm run'
 alias dk='docker'
 alias dkc='docker-compose'
 alias dkexec='dk exec -it `dk ps -q | head -n1`'
