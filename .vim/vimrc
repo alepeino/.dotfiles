@@ -12,6 +12,10 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'bhurlow/vim-parinfer'
 Plugin 'tpope/vim-fireplace'
 Plugin 'tpope/vim-fugitive'
+Plugin 'scrooloose/nerdtree'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plugin 'ryanoasis/vim-devicons'
 call vundle#end()
 
 filetype plugin indent on
@@ -21,6 +25,7 @@ filetype plugin indent on
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
+set encoding=UTF-8
 
 set number
 
@@ -30,3 +35,11 @@ set mousemodel=popup
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
 
+let g:NERDTreeShowHidden=1
+let g:NERDTreeIgnore=['\.git$']
+
+map <C-n> :NERDTreeToggle<CR>
+
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | wincmd h | exe 'cd '.argv()[0] | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
