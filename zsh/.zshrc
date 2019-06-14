@@ -63,6 +63,7 @@ plugins=(
   docker
   docker-compose
   kubectl
+  tmux
 )
 
 source $ZSH/oh-my-zsh.sh
