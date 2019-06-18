@@ -7,6 +7,7 @@ case "$1" in
 	"vim")
 		mkdir -p $HOME/.fonts
 		(cd $HOME/.fonts && wget "https://raw.githack.com/ryanoasis/nerd-fonts/master/patched-fonts/UbuntuMono/Regular/complete/Ubuntu Mono Nerd Font Complete.ttf")
+		(cd $HOME/.fonts && wget "https://raw.githack.com/ryanoasis/nerd-fonts/master/patched-fonts/DejaVuSansMono/Regular/complete/DejaVu Sans Mono Nerd Font Complete.ttf")
 		mkdir -p ./.vim/bundle
 		git clone https://github.com/VundleVim/Vundle.vim.git ./.vim/bundle/Vundle.vim
 		ln -s $(pwd)/.vim $HOME/.vim
