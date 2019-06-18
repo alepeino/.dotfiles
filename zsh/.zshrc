@@ -62,6 +62,8 @@ plugins=(
   git
   docker
   docker-compose
+  kubectl
+  tmux
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -108,3 +110,4 @@ export NVM_DIR="$HOME/.nvm"
 PATH+=":./node_modules/.bin"
 PATH+=":$HOME/.yarn/bin"
 
+test -e $HOME/.path && source $HOME/.path
