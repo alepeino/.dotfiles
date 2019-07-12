@@ -28,6 +28,8 @@ set shiftwidth=4
 set softtabstop=4
 set encoding=UTF-8
 
+set clipboard=unnamedplus
+
 set number
 
 "set wrap!
