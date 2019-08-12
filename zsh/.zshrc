@@ -110,4 +110,4 @@ export NVM_DIR="$HOME/.nvm"
 PATH+=":./node_modules/.bin"
 PATH+=":$HOME/.yarn/bin"
 
-test -e $HOME/.path && source $HOME/.path
+test -e $HOME/.extra && source $HOME/.extra
