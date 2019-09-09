@@ -63,6 +63,7 @@ plugins=(
   docker
   docker-compose
   kubectl
+  terraform
   tmux
 )
 
